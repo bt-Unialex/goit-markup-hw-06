@@ -643,7 +643,7 @@ footer .logo-secondpart {
   }
 
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -657,13 +657,17 @@ footer .logo-secondpart {
     margin-right: 76px;
   }
 
+  .header-burger {
+    display: none;
+  }
+
   .header-nav,
   .header-addres {
     display: flex;
     align-items: center;
   }
 
-  .nav-menu,
+  .header-nav .nav-menu,
   .addres-menu {
     display: flex;
     gap: 40px;

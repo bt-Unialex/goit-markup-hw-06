@@ -167,11 +167,16 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
-  /*max-width: 720px;*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi) {
+  .title-section {
+    background-image: url("../images/people-office_2x.jpg");
+  }
 }
 
 .title-text {

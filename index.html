@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Best studio for web development">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
@@ -25,10 +26,10 @@
             <a class="nav-link" href="./index.html">Studio</a>
           </li>
           <li class="nav-menu-item">
-            <a class="nav-link" href="">Portfolio</a>
+            <a class="nav-link" href="#Portfolio">Portfolio</a>
           </li>
           <li class="nav-menu-item">
-            <a class="nav-link" href="">Contacts</a>
+            <a class="nav-link" href="#Contacts">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -42,7 +43,7 @@
           </li>
         </ul>
       </address>
-      <button type="button" class="header-burger">
+      <button type="button" class="header-burger" aria-label="open navigation menu">
         <svg class="burger-icon" width="24" height="24">
           <use href="./images/icons.svg#icon-burger"></use>
         </svg>
@@ -51,7 +52,7 @@
     <!----------MOBILE MENU---------->
     <div class="menu-overlay modal-overlay">
       <div class="header-menu modal">
-        <button class="menu-closebtn closebtn" type="button">
+        <button class="menu-closebtn closebtn" type="button" aria-label="close menu">
           <svg class="closebtn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -82,28 +83,28 @@
           </address>
           <ul class="socmedia-box">
             <li class="socmedia-item">
-              <a href="" class="socmedia-link">
+              <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to instagram">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socmedia-item">
-              <a href="" class="socmedia-link">
+              <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to twitter">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="socmedia-item">
-              <a href="" class="socmedia-link">
+              <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to facebook">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socmedia-item">
-              <a href="" class="socmedia-link">
+              <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to linkedin">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -187,35 +188,36 @@
         <h2 class="team-title">Our Team</h2>
         <ul class="team-wrapper">
           <li class="team-item">
-            <img src="./images/teamcard1.jpg" alt="Product Designer foto" width="264" />
+            <img srcset="./images/teamcard1.jpg 1x, ./images/teamcard1_2x.jpg 2x" src="./images/teamcard1.jpg"
+              alt="Product Designer foto" width="264" />
             <div class="team-description">
               <h3 class="team-name">Mark Guerrero</h3>
               <p class="team-position">Product Designer</p>
               <!------Soc box---->
               <ul class="socmedia-box">
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to instagram">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to twitter">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to facebook">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to linkedin">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -226,35 +228,36 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="./images/teamcard2.jpg" alt="Frontend Developer foto" width="264" />
+            <img srcset="./images/teamcard2.jpg 1x, ./images/teamcard2_2x.jpg 2x" src="./images/teamcard2.jpg"
+              alt="Frontend Developer foto" width="264" />
             <div class="team-description">
               <h3 class="team-name">Tom Ford</h3>
               <p class="team-position">Frontend Developer</p>
               <!------Soc box---->
               <ul class="socmedia-box">
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to instagram">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to twitter">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to facebook">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to linkedin">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -265,35 +268,36 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="./images/teamcard3.jpg" alt="Marketing manger foto" width="264" />
+            <img srcset="./images/teamcard3.jpg 1x, ./images/teamcard3_2x.jpg 2x" src="./images/teamcard3.jpg"
+              alt="Marketing manger foto" width="264" />
             <div class="team-description">
               <h3 class="team-name">Camila Garcia</h3>
               <p class="team-position">Marketing</p>
               <!------Soc box---->
               <ul class="socmedia-box">
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to instagram">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to twitter">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to facebook">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to linkedin">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -304,35 +308,36 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="./images/teamcard4.jpg" alt="UI Designer foto" width="264" />
+            <img srcset="./images/teamcard4.jpg 1x, ./images/teamcard4_2x.jpg 2x" src="./images/teamcard4.jpg"
+              alt="UI Designer foto" width="264" />
             <div class="team-description">
               <h3 class="team-name">Daniel Wilson</h3>
               <p class="team-position">UI Designer</p>
               <!------Soc box---->
               <ul class="socmedia-box">
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to instagram">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to twitter">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to facebook">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socmedia-item">
-                  <a href="" class="socmedia-link">
+                  <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to linkedin">
                     <svg class="icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -346,13 +351,14 @@
       </div>
     </section>
     <!----------4 SECTION"PORTFOLIO"---------->
-    <section class="section">
+    <section class="section" id="Portfolio">
       <div class="container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-wrapper">
           <li class="portfolio-item">
             <div class="portfolio-overlay-box">
-              <img src="./images/projectcard11.jpg" alt="Banking App intro" width="360" />
+              <img srcset="./images/projectcard11.jpg 1x, ./images/projectcard11_2x.jpg 2x"
+                src="./images/projectcard11.jpg" alt="Banking App intro" width="360" />
               <p class="portfolio-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -366,7 +372,8 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-overlay-box">
-              <img src="./images/projectcard12.jpg" alt="Cashless Payment intro" width="360" />
+              <img srcset="./images/projectcard12.jpg 1x, ./images/projectcard12_2x.jpg 2x"
+                src="./images/projectcard12.jpg" alt="Cashless Payment intro" width="360" />
               <p class="portfolio-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -380,7 +387,8 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-overlay-box">
-              <img src="./images/projectcard13.jpg" alt="Meditation App intro" width="360" />
+              <img srcset="./images/projectcard13.jpg 1x, ./images/projectcard13_2x.jpg 2x"
+                src="./images/projectcard13.jpg" alt="Meditation App intro" width="360" />
               <p class="portfolio-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -394,7 +402,8 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-overlay-box">
-              <img src="./images/projectcard21.jpg" alt="Taxi Service intro" width="360" />
+              <img srcset="./images/projectcard21.jpg 1x, ./images/projectcard21_2x.jpg 2x"
+                src="./images/projectcard21.jpg" alt="Taxi Service intro" width="360" />
               <p class="portfolio-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -408,7 +417,8 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-overlay-box">
-              <img src="./images/projectcard22.jpg" alt="Screen Illustrations intro" width="360" />
+              <img srcset="./images/projectcard22.jpg 1x, ./images/projectcard22_2x.jpg 2x"
+                src="./images/projectcard22.jpg" alt="Screen Illustrations intro" width="360" />
               <p class="portfolio-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -422,7 +432,8 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-overlay-box">
-              <img src="./images/projectcard23.jpg" alt="Online Courses intro" width="360" />
+              <img srcset="./images/projectcard23.jpg 1x, ./images/projectcard23_2x.jpg 2x"
+                src="./images/projectcard23.jpg" alt="Online Courses intro" width="360" />
               <p class="portfolio-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -439,7 +450,7 @@
     </section>
   </main>
   <!----------FOOTER---------->
-  <footer class="footer-section section">
+  <footer class="footer-section section" id="Contacts">
     <div class="footer-container container">
       <div class="footer-item">
         <a href="./index.html" class="logo">Web<span class="logo-secondpart">Studio</span></a>
@@ -453,28 +464,28 @@
         <!------Soc box---->
         <ul class="footer-socmedia-box">
           <li class="socmedia-item">
-            <a href="" class="socmedia-link">
+            <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to instagram">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="socmedia-item">
-            <a href="" class="socmedia-link">
+            <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to twitter">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="socmedia-item">
-            <a href="" class="socmedia-link">
+            <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to facebook">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socmedia-item">
-            <a href="" class="socmedia-link">
+            <a href="" class="socmedia-link" target="_blank" rel="noopener noreferrer" aria-label="to linkedin">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
@@ -502,7 +513,7 @@
   <!----------MODAL---------->
   <div class="modal-overlay">
     <div class="modal-form modal">
-      <button class="modal-closebtn closebtn" type="button">
+      <button class="modal-closebtn closebtn" type="button" aria-label="close form">
         <svg class="closebtn-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>

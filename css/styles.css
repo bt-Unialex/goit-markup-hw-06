@@ -24,6 +24,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -101,13 +103,17 @@ img {
   fill: #2F2F37;
 }
 
-.header-menu {
-  min-width: 320px;
-  height: 100vh;
-  padding-top: 72px;
-  padding-left: 16px;
-  padding-right: 16px;
+.menu-overlay {
   background-color: #ffffff;
+}
+
+.header-menu {
+  width: 100%;
+  height: 100%;
+  padding-top: 72px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-closebtn {
@@ -115,15 +121,15 @@ img {
   background-color: rgb(231, 233, 252, 0.1);
 }
 
-.menu-navbox {
-  margin-bottom: 168px;
+.menu-nav {
+  margin-bottom: auto;
 }
 
 .menu-navitem:not(:last-child) {
   margin-bottom: 40px;
 }
 
-.menu-addresbox {
+.menu-addres {
   margin-bottom: 48px;
 }
 
@@ -150,9 +156,15 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-box .socmedia-box {
+/*.menu-navbox .menu-navitem:first-child {
+  color: #404bbf;
+}*/
+.menu-itemcolor-ocean {
+  color: #404bbf;
+}
+
+.header-menu .socmedia-box {
   width: 280px;
-  justify-content: flex-start;
   gap: 40px;
 }
 
@@ -166,16 +178,19 @@ img {
   background-image: linear-gradient(to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/mDark-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  max-width: 320px;
 }
 
 @media (min-resolution: 192dpi) {
   .title-section {
-    background-image: url("../images/people-office_2x.jpg");
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url("../images/mDark-bg_2x.jpg");
   }
 }
 
@@ -497,7 +512,6 @@ footer .logo-secondpart {
 
 /*---------------MODAL---------------*/
 .modal-overlay {
-  background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
   left: 0;
@@ -515,6 +529,10 @@ footer .logo-secondpart {
   pointer-events: auto;
 }
 
+.sendcontacts-overlay {
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -523,7 +541,7 @@ footer .logo-secondpart {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form {
+.sendcontacts-form {
   width: 288px;
   min-height: 623px;
   background-color: #fcfcfc;
@@ -689,8 +707,10 @@ footer .logo-secondpart {
 /*---------------TABLET---------------*/
 /*---------------768px----------------*/
 @media (min-width:768px) and (max-width:1157px) {
-  img {
-    max-width: 100%;
+
+  /*---------------Header-T-------------*/
+  .addres-menu {
+    flex-direction: column;
   }
 
   /*---------------2 SECTION-T-------------*/
@@ -710,7 +730,7 @@ footer .logo-secondpart {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    margin-left: 92px;
+    padding-left: 108px;
   }
 }
 
@@ -755,6 +775,11 @@ footer .logo-secondpart {
     padding: 24px 0;
   }
 
+  .addres-menu {
+    display: flex;
+    gap: 12px;
+  }
+
   .addres-link {
     font-weight: 400;
     font-size: 12px;
@@ -791,8 +816,8 @@ footer .logo-secondpart {
     background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(../images/people-office.jpg);
-    /*max-width: 1440px;*/
+      url(../images/tDark-bg.jpg);
+    max-width: 768px;
   }
 
   .title-text {
@@ -870,8 +895,17 @@ footer .logo-secondpart {
     overflow-y: auto;
   }
 
-  /*------END TABLET (768px)*/
 }
+
+@media (min-resolution: 192dpi) {
+  .title-section {
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url("../images/tDark-bg_2x.jpg");
+  }
+}
+
+/*------END TABLET (768px)*/
 
 /*---------------DESCTOP---------------*/
 /*---------------1158px----------------*/
@@ -897,7 +931,6 @@ footer .logo-secondpart {
   }
 
   .addres-menu {
-    display: flex;
     gap: 40px;
   }
 
@@ -919,7 +952,7 @@ footer .logo-secondpart {
     background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(../images/people-office.jpg);
+      url(../images/dDark-bg.jpg);
     max-width: 1440px;
   }
 
@@ -1027,4 +1060,12 @@ footer .logo-secondpart {
   }
 
   /*------END DESCTOP (1158px)*/
+}
+
+@media (min-resolution: 192dpi) {
+  .title-section {
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url("../images/dDark-bg_2x.jpg");
+  }
 }
